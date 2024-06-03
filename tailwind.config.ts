@@ -8,11 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        main: '#ED7D27',
+        secondary: '#D9641E',
+        'back-main': '#F7F7F7',
+        'back-second': '#ECE2D2',
+        'text-main': '#141414',
+        'text-secondary': '#41423A',
       },
+      fontFamily: {
+        vanity: ['Vanity', 'sans-serif'],
+        
+        cant: ['cantata', 'sans-serif'],
+        voni: ['Vonique', 'sans-serif'],
+        vonif: ['Vonique 43_D', 'sans-serif'],
+        hindeng: ['hindeng', 'sans-serif'],
+        antipasto: ['antipasti', 'sans-serif'],
+        cocogothic: ['cocogothic', 'sans-serif'],
+      }
     },
   },
   plugins: [],
