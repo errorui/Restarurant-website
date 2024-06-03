@@ -11,7 +11,7 @@ const swipperitems = [
   { src: "images/about.jpg", name: "indian thali" },
   { src: "images/Barfi-Diwali_sweet.jpg", name: "barfi" },
   { src: "images/biryani.jpg", name: "biryani" },
-  { src: "images/kheer.jpg", name: "kheer" },
+  { src: "images/kheeer.jpg", name: "kheer" },
   { src: "images/Palakpaneer.jpg", name: "palak panner" },
   { src: "images/chicken.jpg", name: "chicken" },
 ];

@@ -29,7 +29,7 @@ const items: ProductItem[] = [
     quantity: 1,
     price: 300,
   },
-  { img: "images/kheer.jpg", productname: "kheer", quantity: 1, price: 75 },
+  { img: "images/kheeer.jpg", productname: "kheer", quantity: 1, price: 75 },
   {
     img: "images/Palakpaneer.jpg",
     productname: "palak panner",
