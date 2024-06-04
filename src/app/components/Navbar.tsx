@@ -5,21 +5,7 @@ import { UseAuth } from "../Context/UseStore";
 import { FaBars, FaTimes } from "react-icons/fa";
 import useIsMobile from "../hook/isMobile";
 
-type NavItem = {
-  name: string;
-  pathname: string;
-};
-
-const navitems: NavItem[] = [
-  {
-    name: "order now",
-    pathname: "/order",
-  },
-  {
-    name: "our team",
-    pathname: "/workers",
-  },
-];
+import { navitems } from "../data";
 
 const Navbar = () => {
   let ismobile: boolean = useIsMobile();
@@ -58,7 +44,7 @@ const Navbar = () => {
                 className={`${ismobile && "bg-slate-200"} bg-back-main  p-2`}
               >
                 <button
-                  className="border-[3px] border-main text-secondary rounded-full px-4 py-2 font-medium font-hindeng "
+                  className="hover:border-black hover:bg-black hover:text-white  border-[3px] border-main text-secondary rounded-full px-4 py-2 font-medium font-hindeng "
                   onClick={signout}
                 >
                   sign out

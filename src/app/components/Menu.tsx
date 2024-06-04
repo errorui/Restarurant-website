@@ -7,14 +7,7 @@ import "swiper/css/pagination";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import useIsMobile from "../hook/isMobile";
 
-const swipperitems = [
-  { src: "images/about.jpg", name: "indian thali" },
-  { src: "images/Barfi-Diwali_sweet.jpg", name: "barfi" },
-  { src: "images/biryani.jpg", name: "biryani" },
-  { src: "images/kheeer.jpg", name: "kheer" },
-  { src: "images/Palakpaneer.jpg", name: "palak panner" },
-  { src: "images/chicken.jpg", name: "chicken" },
-];
+import { swipperitems } from "../data";
 
 const Menu_Section = () => {
   let ismobile: boolean = useIsMobile();

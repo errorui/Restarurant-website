@@ -7,6 +7,7 @@ const page = () => {
         About Us
       </h1>
       <div>
+        {/* ceo */}
         <section className="md:flex items-center justify-center my-10  font-antipasto ">
           <div className="w-full  md:w-[50%] p-4 flex flex-col justify-center items-center">
             <img
@@ -16,7 +17,7 @@ const page = () => {
             />
           </div>
           <div className="w-full  p-4 flex flex-col justify-center items-start">
-            <h2 className="  text-2xl font-semibold mb-4 text-main text-left font-hindeng">
+            <h2 className="  text-4xl font-semibold mb-4 text-main text-left font-hindeng">
               Our CEO
             </h2>
             <p className="text-lg ">
@@ -38,7 +39,7 @@ const page = () => {
             </p>
           </div>
         </section>
-
+        {/* main chief */}
         <section className="md:flex items-center justify-center font-antipasto">
           <div className=" w-full  md:w-[50%]  p-4 flex flex-col justify-center items-center">
             <img
@@ -48,7 +49,7 @@ const page = () => {
             />
           </div>
           <div className="w-full  p-4 flex flex-col justify-center items-start">
-            <h2 className="text-2xl  font-semibold mb-4  text-main font-hindeng">
+            <h2 className="text-center md:text-left text-4xl  font-semibold mb-4  text-main font-hindeng">
               Our Main Chef
             </h2>
             <p className="text-lg ">

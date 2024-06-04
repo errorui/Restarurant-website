@@ -6,12 +6,7 @@ import { UseProductStore } from "../order/UseProductStore";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { UseAuth } from "../Context/UseStore";
-type ProductItem = {
-  productname: string;
-  quantity: number;
-  price: number;
-  img: string;
-};
+import { ProductItem } from "../type";
 function getitems(arr: ProductItem[]) {
   let ans: number = 0;
   for (let i = 0; i < arr.length; i++) {

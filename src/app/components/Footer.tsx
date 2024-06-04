@@ -1,26 +1,9 @@
 "use client";
 
 import React from "react";
-import { ReactElement } from "react";
-import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
-type social_connection = {
-  link: string;
-  icon: ReactElement<any, any>;
-};
-const connections: social_connection[] = [
-  {
-    link: "intstagram",
-    icon: <FaInstagram />,
-  },
-  {
-    link: "facebook",
-    icon: <FaFacebook />,
-  },
-  {
-    link: "youtube",
-    icon: <FaYoutube />,
-  },
-];
+
+import { connections } from "../data";
+
 const Footer = () => {
   return (
     <div className="bg-slate-200  font-antipasto md:flex justify-center items-center gap-x-10  gap-y-4 min-h-[35vh] p-5 mt-auto shadow-lg shadow-slate-400 ">
@@ -39,17 +22,23 @@ const Footer = () => {
           })}
         </div>
       </div>
-      <div className="my-3 addresss flex flex-col items-center justify-center w-full text-lg font-light">
-        <h1 className="font-semibold text-3xl mb-9 font-hindeng text-main">
+      <div className="my-3 addresss flex flex-col items-center justify-center w-full text-lg font-light text-center">
+        <h1 className="font-semibold text-3xl mb-9 font-hindeng text-main text-center uppercase">
           Address
         </h1>
-        <h2>Jaipur,sector-34,near ambience mall.</h2>
+        <h2>
+          Near ambience,
+          <br />
+          Sector-35,
+          <br />
+          Jaipur
+        </h2>
       </div>
-      <div className="my-3 open flex flex-col items-center justify-center w-full text-lg font-light">
-        <h1 className="font-semibold text-3xl mb-9 font-hindeng text-main">
+      <div className="my-3 open flex flex-col items-center justify-center w-full text-lg font-light uppercase">
+        <h1 className="font-semibold text-3xl mb-9 font-hindeng text-main ">
           Opening hours
         </h1>
-        8:00am-9:30pm
+        8:00 am - 9:30 pm
       </div>
     </div>
   );

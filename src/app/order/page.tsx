@@ -4,45 +4,9 @@ import { UseProductStore } from "./UseProductStore";
 import { UseAuth } from "../Context/UseStore";
 import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/navigation";
-type ProductItem = {
-  productname: string;
-  quantity: number;
-  price: number;
-  img: string;
-};
-const items: ProductItem[] = [
-  {
-    img: "images/about.jpg",
-    productname: "indian thali",
-    quantity: 1,
-    price: 450,
-  },
-  {
-    img: "images/Barfi-Diwali_sweet.jpg",
-    productname: "barfi",
-    quantity: 1,
-    price: 150,
-  },
-  {
-    img: "images/biryani.jpg",
-    productname: "biryani",
-    quantity: 1,
-    price: 300,
-  },
-  { img: "images/kheeer.jpg", productname: "kheer", quantity: 1, price: 75 },
-  {
-    img: "images/Palakpaneer.jpg",
-    productname: "palak panner",
-    quantity: 1,
-    price: 100,
-  },
-  {
-    img: "images/chicken.jpg",
-    productname: "chicken",
-    quantity: 1,
-    price: 250,
-  },
-];
+import { ProductItem } from "../type";
+import { items } from "../data";
+
 const page = () => {
   const { additems } = UseProductStore();
 

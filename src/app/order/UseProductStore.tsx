@@ -6,53 +6,8 @@ import React, {
   useContext,
   ReactNode,
 } from "react";
-
-type ProductItem = {
-  productname: string;
-  quantity: number;
-  price: number;
-  img: string;
-};
-const items: ProductItem[] = [
-  {
-    img: "images/about.jpg",
-    productname: "indian thali",
-    quantity: 1,
-    price: 450,
-  },
-  {
-    img: "images/Barfi-Diwali_sweet.jpg",
-    productname: "barfi",
-    quantity: 1,
-    price: 150,
-  },
-  {
-    img: "images/biryani.jpg",
-    productname: "biryani",
-    quantity: 1,
-    price: 300,
-  },
-  { img: "images/kheer.jpg", productname: "kheer", quantity: 1, price: 75 },
-  {
-    img: "images/Palakpaneer.jpg",
-    productname: "palak panner",
-    quantity: 1,
-    price: 100,
-  },
-  {
-    img: "images/chicken.jpg",
-    productname: "chicken",
-    quantity: 1,
-    price: 250,
-  },
-];
-type UseProductContext = {
-  productitems: ProductItem[];
-  additems: (item: ProductItem) => void;
-  removeitems: (productname: string) => void;
-  increasequantity: (product: ProductItem, increase: boolean) => void;
-  emptyarr: () => void;
-};
+import { items } from "../data";
+import { ProductItem, UseProductContext } from "../type";
 
 const ProductContext = createContext<UseProductContext | null>(null);
 

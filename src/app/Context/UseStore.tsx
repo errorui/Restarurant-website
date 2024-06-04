@@ -15,15 +15,8 @@ import {
   useState,
   useEffect,
 } from "react";
-
+import { context_type } from "../type";
 import React from "react";
-type context_type = {
-  user: any;
-  loading: boolean;
-  signout: () => Promise<void>;
-  signingoogle: () => Promise<void>;
-  signemail_pass: (a: string, b: string, c: boolean) => Promise<void>;
-};
 
 const AuthContext = createContext<context_type | null>(null);
 
