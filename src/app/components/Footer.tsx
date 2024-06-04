@@ -27,9 +27,9 @@ const Footer = () => {
           Address
         </h1>
         <h2>
-          Near ambience,
+          Near ambience
           <br />
-          Sector-35,
+          Sector-35
           <br />
           Jaipur
         </h2>

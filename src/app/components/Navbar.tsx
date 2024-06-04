@@ -63,14 +63,14 @@ const Navbar = () => {
               <li
                 className={`${
                   ismobile && "bg-slate-200"
-                } bg-back-main  p-2 font-bold text-xl hover:text-main`}
+                } bg-back-main -mb-1  p-2 font-bold  hover:text-main`}
               >
                 <Link href="/login">login</Link>
               </li>
               <li
                 className={`${
-                  ismobile && "bg-slate-200"
-                } bg-back-main  p-2 font-bold text-xl hover:text-main`}
+                  ismobile && "bg-slate-200  "
+                } bg-back-main  p-2 font-bold  hover:text-main`}
               >
                 <Link href="/signin">sign up</Link>
               </li>
@@ -80,7 +80,7 @@ const Navbar = () => {
             <li
               key={i.pathname}
               className={`${
-                ismobile && "bg-slate-200"
+                ismobile && "bg-slate-200 -mb-1"
               } bg-back-main  p-2 font-bold hover:text-main`}
             >
               <Link href={i.pathname}>{i.name}</Link>
