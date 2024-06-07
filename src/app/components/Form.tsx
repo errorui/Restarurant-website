@@ -2,6 +2,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import { UseAuth } from "../Context/UseStore";
+import Link from "next/link";
 
 const LoginForm = ({ signup }: { signup: boolean }) => {
   const { signemail_pass, signingoogle } = UseAuth();
@@ -14,66 +15,76 @@ const LoginForm = ({ signup }: { signup: boolean }) => {
   };
 
   return (
-    <div
-      style={{
-        border: "32px solid white ",
-        borderImage: 'url("border/borderimage3.jpg")',
-        borderImageSlice: "100 106 103 100",
-        borderImageRepeat: "round",
-        borderRadius: "1rem",
-      }}
-      className=" w-full bg-white shadow-2xl p-4 mx-auto"
-    >
-      <h2 className=" text-3xl font-bold mb-6 text-text-main uppercase font-hindeng">
-        {signup ? "signup" : "login"}
-      </h2>
-      <form onSubmit={handleSubmit} className="">
-        <div className="space-y-4 mb-4">
-          <div className="flex gap-3 justify-center items-center space-x-4">
-            <input
-              placeholder="Email"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"
-              type="email"
-              id="email"
-              name="email"
-              required
-            />
-          </div>
+    <>
+      <div
+        style={{
+          border: "32px solid white ",
+          borderImage: 'url("border/borderimage3.jpg")',
+          borderImageSlice: "100 106 103 100",
+          borderImageRepeat: "round",
+          borderRadius: "1rem",
+        }}
+        className=" w-full bg-white shadow-2xl p-4 mx-auto"
+      >
+        <h2 className=" text-3xl font-bold mb-6 text-text-main uppercase font-hindeng">
+          {signup ? "signup" : "login"}
+        </h2>
+        <form onSubmit={handleSubmit} className="">
+          <div className="space-y-4 mb-4">
+            <div className="flex gap-3 justify-center items-center space-x-4">
+              <input
+                placeholder="Email"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
 
-          <div className="flex gap-3 justify-center items-center">
-            <input
-              placeholder="password"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"
-              type="password"
-              id="password"
-              name="password"
-              minLength={4}
-              required
-            />
+            <div className="flex gap-3 justify-center items-center">
+              <input
+                placeholder="password"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"
+                type="password"
+                id="password"
+                name="password"
+                minLength={4}
+                required
+              />
+            </div>
           </div>
-        </div>
-        <div className="btns space-y-2">
-          <button
-            id="form-subtmit-btn"
-            className=" uppercase w-full bg-main text-white hover:shadow-xl duration-500 font-bold py-2 px-4 rounded-md hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-secondary"
-            type="submit"
-          >
-            Submit
-          </button>
+          <div className="btns space-y-2">
+            <button
+              id="form-subtmit-btn"
+              className=" uppercase w-full bg-main text-white hover:shadow-xl duration-500 font-bold py-2 px-4 rounded-md hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-secondary"
+              type="submit"
+            >
+              Submit
+            </button>
 
-          <button
-            id="google-btn"
-            onClick={signingoogle}
-            className="w-full font-n bg-main text-white font-bold uppercase py-2 px-4 rounded-md hover:bg-secondary transition duration-300  
+            <button
+              id="google-btn"
+              onClick={signingoogle}
+              className="w-full font-n bg-main text-white font-bold uppercase py-2 px-4 rounded-md hover:bg-secondary transition duration-300  
          hover:shadow-2xl
          
          "
-          >
-            {signup ? "sign up with google" : "login in with google"}
-          </button>
-        </div>
-      </form>
-    </div>
+            >
+              {signup ? "sign up with google" : "login in with google"}
+            </button>
+          </div>
+        </form>
+      </div>
+      <div className="mt-[1rem]">
+        <Link
+          href={`\ ${signup ? "login" : "signin"}`}
+          className=" text-black  hover:text-secondary font-semibold uppercase font-antipasto tracking-widest  "
+        >
+          {signup ? " already a member?" : "not a member"}
+        </Link>
+      </div>
+    </>
   );
 };
 const Form = ({ text }: { text: string }) => {

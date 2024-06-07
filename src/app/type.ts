@@ -39,5 +39,11 @@ type ProductItem = {
     src:string,
     name:string
   }
-  export type {ProductItem,NavItem,review,social_connection,context_type,UseProductContext,swipperitem}
+  type worker_data={
+    prof:string,
+    profimg:string,
+    name:string,
+    background:string
+  }
+  export type {ProductItem,NavItem,review,social_connection,context_type,UseProductContext,swipperitem,worker_data}
  

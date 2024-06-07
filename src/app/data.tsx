@@ -1,9 +1,11 @@
+import { TbBackground } from "react-icons/tb";
 import {
   NavItem,
   ProductItem,
   review,
   social_connection,
   swipperitem,
+  worker_data,
 } from "./type";
 import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 const swipperitems: swipperitem[] = [
@@ -95,4 +97,52 @@ const items: ProductItem[] = [
   },
 ];
 
-export { navitems, connections, reviewitems, items, swipperitems };
+let workers_data: worker_data[] = [
+  {
+    prof: "CEO",
+    profimg: "images/Ceo.png",
+    name: "Rajesh Mehta",
+    background: `Rajesh Mehta, our
+    visionary CEO, has over 20 years of experience in the hospitality
+    industry. He founded our restaurant with the aim of bringing
+    authentic Indian flavors to a wider audience. Before embarking on
+    his journey in the culinary world, Rajesh dedicated several years
+    to working with various NGOs, focusing on community development
+    and food security. His extensive background in social work has
+    greatly influenced his approach to business, emphasizing
+    sustainability and community involvement. Under his leadership,
+    our restaurant has grown from a small family-owned business to a
+    renowned establishment, known not only for its delicious cuisine
+    but also for its commitment to making a positive impact in the
+    community.`,
+  },
+  {
+    prof: "Main Chef",
+    profimg: "images/Maincook.png",
+    name: "Rajiv Kumar",
+    background: `Rajiv Kumar, our
+    head chef, hails from a long line of culinary experts. With a deep
+    passion for Indian cuisine, he brings a unique blend of
+    traditional and modern techniques to our kitchen. Rajiv's culinary
+    journey began in his family's kitchen, where he learned the
+    secrets of authentic Indian cooking from his grandparents. He
+    further honed his skills at prestigious culinary institutes and
+    worked in several renowned restaurants across India and abroad,
+    gaining invaluable experience and refining his craft.Rajiv's
+    innovative dishes and dedication to quality have made our menu a
+    favorite among patrons. His commitment to using fresh,
+    locally-sourced ingredients ensures that every dish not only
+    delights the palate but also supports local farmers and producers.
+    Rajiv is also passionate about mentoring young chefs, often
+    hosting workshops and cooking classes to share his knowledge and
+    inspire the next generation of culinary talent.`,
+  },
+];
+export {
+  navitems,
+  connections,
+  reviewitems,
+  items,
+  swipperitems,
+  workers_data,
+};
