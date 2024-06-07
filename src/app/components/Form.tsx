@@ -103,7 +103,7 @@ const Form = ({ text }: { text: string }) => {
           <button
             id="order-btn"
             onClick={() => router.push("/order")}
-            className="font-hindeng border-main border-2 rounded-3xl my-8 text-text-main hover:text-back-main text-2xl py-2 px-4  hover:bg-main transition duration-300 w-[250px] h-[50px] 
+            className="font-hindeng border-main border-2 rounded-3xl my-8 text-text-main hover:border-text-main   hover:text-back-main text-2xl py-2 px-4  hover:bg-text-main transition duration-300 w-[250px] h-[50px] 
             hover:shadow-2xl"
           >
             order now
